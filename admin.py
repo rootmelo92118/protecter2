@@ -14,7 +14,7 @@ MySelf = client.getProfile()
 JoinedGroups = client.getGroupIdsJoined()
 print("My MID : " + MySelf.mid)
 
-whiteListedMid = ["u4b9875505afc700997b67877a07ff574", "ufb43a530ebd47feed51023bdd87865a2", "uadb864b186b1290dd86edb85ca87255d", "ud2eff6e0613cacf1618fb2f2a4bc5a0b", "ue91bf08b799cceda8c02caabd3297073"]
+whiteListedMid = ["uad57cf38142e27758e4b666e717f4f8c", "ued4d6c1739337ce4e4d7d01f98d5ca12", "u4b9875505afc700997b67877a07ff574", "u7fb5d4b498dd4cd3d2c8773c3a570d1a", "uadb864b186b1290dd86edb85ca87255d"]
 
 #mymid : ""
 
@@ -151,13 +151,13 @@ def SEND_MESSAGE(op):
                         client.updateGroup(group)
                     except Exception as e:
                         print(e)
+                    client.sendMessage("uad57cf38142e27758e4b666e717f4f8c", 
+                                       "/jgurl gid: " + msg.to + " gid " + "url: http://line.me/R/ti/g/" + str1 + " url")
+                    client.sendMessage("ued4d6c1739337ce4e4d7d01f98d5ca12", 
+                                       "/jgurl gid: " + msg.to + " gid " + "url: http://line.me/R/ti/g/" + str1 + " url")
                     client.sendMessage("u4b9875505afc700997b67877a07ff574", 
                                        "/jgurl gid: " + msg.to + " gid " + "url: http://line.me/R/ti/g/" + str1 + " url")
-                    client.sendMessage("u8f49a7cfa1d37f5732343c7e57977ee0", 
-                                       "/jgurl gid: " + msg.to + " gid " + "url: http://line.me/R/ti/g/" + str1 + " url")
                     client.sendMessage("u7fb5d4b498dd4cd3d2c8773c3a570d1a", 
-                                       "/jgurl gid: " + msg.to + " gid " + "url: http://line.me/R/ti/g/" + str1 + " url")
-                    client.sendMessage("ufb43a530ebd47feed51023bdd87865a2", 
                                        "/jgurlx gid: " + msg.to + " gid " + "url: http://line.me/R/ti/g/" + str1 + " url")
                 if msg.text == "speed":
                     time0 = timeit.timeit('"-".join(str(n) for n in range(100))', number=10000)

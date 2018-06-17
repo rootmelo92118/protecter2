@@ -14,7 +14,7 @@ MySelf = client.getProfile()
 JoinedGroups = client.getGroupIdsJoined()
 print("My MID : " + MySelf.mid)
 
-whiteListedMid = ["u4b9875505afc700997b67877a07ff574", "u8f49a7cfa1d37f5732343c7e57977ee0", "u7fb5d4b498dd4cd3d2c8773c3a570d1a", "ufb43a530ebd47feed51023bdd87865a2", "uadb864b186b1290dd86edb85ca87255d"]
+whiteListedMid = ["uad57cf38142e27758e4b666e717f4f8c", "ued4d6c1739337ce4e4d7d01f98d5ca12", "u4b9875505afc700997b67877a07ff574", "u7fb5d4b498dd4cd3d2c8773c3a570d1a", "uadb864b186b1290dd86edb85ca87255d"]
 
 #mymid : ""
 
@@ -25,7 +25,7 @@ def NOTIFIED_INVITE_INTO_GROUP(op):
             if op.param2 in whiteListedMid:
                 client.acceptGroupInvitation(op.param1)
                 JoinedGroups.append(op.param1)
-                client.inviteIntoGroup(op.param1, ["u8f49a7cfa1d37f5732343c7e57977ee0", "u7fb5d4b498dd4cd3d2c8773c3a570d1a", "ufb43a530ebd47feed51023bdd87865a2"])
+                client.inviteIntoGroup(op.param1, ["ued4d6c1739337ce4e4d7d01f98d5ca12", "u4b9875505afc700997b67877a07ff574", "u7fb5d4b498dd4cd3d2c8773c3a570d1a"])
             else:
                 client.acceptGroupInvitation(op.param1)
                 JoinedGroups.append(op.param1)

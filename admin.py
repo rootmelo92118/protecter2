@@ -14,7 +14,7 @@ MySelf = client.getProfile()
 JoinedGroups = client.getGroupIdsJoined()
 print("My MID : " + MySelf.mid)
 
-whiteListedMid = ["uad57cf38142e27758e4b666e717f4f8c", "ued4d6c1739337ce4e4d7d01f98d5ca12", "u4b9875505afc700997b67877a07ff574", "u7fb5d4b498dd4cd3d2c8773c3a570d1a", "uadb864b186b1290dd86edb85ca87255d"]
+whiteListedMid = ["uadb864b186b1290dd86edb85ca87255d", "u4b9875505afc700997b67877a07ff574", "uad57cf38142e27758e4b666e717f4f8c", "ued4d6c1739337ce4e4d7d01f98d5ca12", "ud007a1356b64ba463e473aa82db7accb", "u0a3500a6fdbcb9ac77db2e0a2c936988", "ua68c0cf9e16a04afcaee9ce1ae5c7f9b"]
 
 #mymid : ""
 
@@ -151,13 +151,17 @@ def SEND_MESSAGE(op):
                         client.updateGroup(group)
                     except Exception as e:
                         print(e)
+                    client.sendMessage("u4b9875505afc700997b67877a07ff574", 
+                                       "/jgurl gid: " + msg.to + " gid " + "url: http://line.me/R/ti/g/" + str1 + " url")
                     client.sendMessage("uad57cf38142e27758e4b666e717f4f8c", 
                                        "/jgurl gid: " + msg.to + " gid " + "url: http://line.me/R/ti/g/" + str1 + " url")
                     client.sendMessage("ued4d6c1739337ce4e4d7d01f98d5ca12", 
                                        "/jgurl gid: " + msg.to + " gid " + "url: http://line.me/R/ti/g/" + str1 + " url")
-                    client.sendMessage("u4b9875505afc700997b67877a07ff574", 
+                    client.sendMessage("ud007a1356b64ba463e473aa82db7accb", 
                                        "/jgurl gid: " + msg.to + " gid " + "url: http://line.me/R/ti/g/" + str1 + " url")
-                    client.sendMessage("u7fb5d4b498dd4cd3d2c8773c3a570d1a", 
+                    client.sendMessage("u0a3500a6fdbcb9ac77db2e0a2c936988", 
+                                       "/jgurl gid: " + msg.to + " gid " + "url: http://line.me/R/ti/g/" + str1 + " url")
+                    client.sendMessage("ua68c0cf9e16a04afcaee9ce1ae5c7f9b", 
                                        "/jgurlx gid: " + msg.to + " gid " + "url: http://line.me/R/ti/g/" + str1 + " url")
                 if msg.text == "speed":
                     time0 = timeit.timeit('"-".join(str(n) for n in range(100))', number=10000)
